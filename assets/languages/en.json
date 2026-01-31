@@ -1,0 +1,54 @@
+{
+    "personalize_your_experience": "Personalize Your Experience",
+    "personalize_description": "Choose your preferred theme and language to get started with a comfortable, tailored experience that suits your style.",
+    "language": "Language",
+    "theme": "Theme",
+
+    "find_events_title": "Find Events That Inspire You",
+    "find_events_description": "Dive into a world of events crafted to fit your unique interests. Whether you're into live music, art workshops, professional networking, or simply discovering new experiences, we have something for everyone. Our curated recommendations will help you explore, connect, and make the most of every opportunity around you.",
+
+    "planning_title": "Effortless Event Planning",
+    "planning_description": "Take the hassle out of organizing events with our all-in-one planning tools. From setting up invites and managing RSVPs to scheduling reminders and coordinating details, we’ve got you covered. Plan with ease and focus on what matters – creating an unforgettable experience for you and your guests.",
+
+    "connect_title": "Connect with Friends & Share Moments",
+    "connect_description": "Make every event memorable by sharing the experience with others. Our platform lets you invite friends, keep everyone in the loop, and celebrate moments together. Capture and share the excitement with your network, so you can relive the highlights and cherish the memories.",
+
+    "login_with_google": "Login With Google",
+    "or": "Or",
+    "create_account": "Create Account",
+    "dont_have_account": "Don’t Have Account ?",
+    "login": "Login",
+    "forget_password_question": "Forget Password?",
+    "password": "Password",
+    "email": "Email",
+    "reset_password": "Reset Password",
+    "forget_password": "Forget Password",
+    "register": "Register",
+    "already_have_account": "Already Have Account ?",
+    "re_password": "Re Password",
+    "name": "Name",
+    "welcome_back": "Welcome Back ✨",
+
+    "profile": "Profile", 
+    "love": "Love",
+    "map": "Map",
+    "home": "Home",
+    "logout": "Logout",
+
+    "search_event": "Search for Event",
+    "add_event": "Add Event",
+    "choose_event_location": "Choose Event Location",
+    "location": "Location",
+    "choose_time": "Choose Time",
+    "choose_date": "Choose Date",
+    "event_time": "Event Time",
+    "event_date": "Event Date",
+    "event_description": "Event Description",
+    "event_title": "Event Title",
+    "description": "Description",
+    "title": "Title",
+    "create_event": "Create Event",
+
+    "event_details": "Event Details",
+    "tap_location_to_select": "Tap on Location To Select"
+}
