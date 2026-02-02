@@ -7,6 +7,16 @@ class AppFontStyles {
     color: AppColor.fontColor,
     fontWeight: FontWeight.w700
   );
+  static TextStyle bold20Black = TextStyle(
+    fontSize: 20,
+    color: AppColor.fontLightModeColor,
+    fontWeight: FontWeight.w700
+  );
+  static TextStyle bold20White = TextStyle(
+    fontSize: 20,
+    color: AppColor.fontDarkModeColor,
+    fontWeight: FontWeight.w700
+  );
   static TextStyle italic16Primary = TextStyle(
     fontSize: 16,
     color: AppColor.fontColor,
@@ -17,6 +27,11 @@ class AppFontStyles {
   static TextStyle semi20Primary = TextStyle(
     fontSize: 20,
     color: AppColor.fontColor,
+    fontWeight: FontWeight.w500
+  );
+  static TextStyle semi20Black = TextStyle(
+    fontSize: 20,
+    color: AppColor.blackColor,
     fontWeight: FontWeight.w500
   );
   static TextStyle semi20white = TextStyle(
@@ -31,6 +46,16 @@ class AppFontStyles {
   );
   static TextStyle semi16LightMode = TextStyle(
     fontSize: 16,
+    color: AppColor.fontLightModeColor,
+    fontWeight: FontWeight.w500
+  );
+  static TextStyle semi14DarkMode = TextStyle(
+    fontSize: 14,
+    color: AppColor.fontDarkModeColor,
+    fontWeight: FontWeight.w500
+  );
+  static TextStyle semi14LightMode = TextStyle(
+    fontSize: 14,
     color: AppColor.fontLightModeColor,
     fontWeight: FontWeight.w500
   );

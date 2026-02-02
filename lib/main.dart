@@ -1,21 +1,21 @@
-import 'package:easy_localization/easy_localization.dart';
+import 'package:evently_app/config/language/manager/lang_provider.dart';
 import 'package:evently_app/config/routes/app_routes.dart';
+import 'package:evently_app/config/themeing/app_theme.dart';
+import 'package:evently_app/config/themeing/manager/theme_provider.dart';
+import 'package:evently_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:provider/provider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await EasyLocalization.ensureInitialized();
-
   runApp(
-    EasyLocalization(
-      supportedLocales: const [
-        Locale('en'),
-        // Locale('ar'),
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_)=>LanguageProvider()),
+        ChangeNotifierProvider(create: (_)=>ThemeProvider()),
       ],
-      path: 'assets/languages', // <-- change the path of the translation files
-      fallbackLocale: Locale('en'),
-      child: const EventlyApp(),
-    ),
+    child: const EventlyApp()),
   );
 }
 
@@ -24,12 +24,22 @@ class EventlyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var languageProvider = Provider.of<LanguageProvider>(context);
+    var themeProvider = Provider.of<ThemeProvider>(context);
     return MaterialApp(
-      localizationsDelegates: context.localizationDelegates,
-      supportedLocales: context.supportedLocales,
-      locale: context.locale,
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
+      themeMode: themeProvider.themeMode,
+      localizationsDelegates: [
+        S.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: S.delegate.supportedLocales,
+      locale: Locale(languageProvider.currentLocal),
       debugShowCheckedModeBanner: false,
-      initialRoute: AppRoutes.home,
+      initialRoute: AppRoutes.intro,
       routes: AppRoutes.routes,
     );
   }
