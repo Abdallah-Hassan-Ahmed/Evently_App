@@ -7,6 +7,11 @@ class AppFontStyles {
     color: AppColor.fontColor,
     fontWeight: FontWeight.w700
   );
+  static TextStyle semi16Primary = TextStyle(
+    fontSize: 16,
+    color: AppColor.fontColor,
+    fontWeight: FontWeight.w500
+  );
   static TextStyle bold20Black = TextStyle(
     fontSize: 20,
     color: AppColor.fontLightModeColor,
@@ -62,6 +67,16 @@ class AppFontStyles {
   static TextStyle semi16gray = TextStyle(
     fontSize: 16,
     color: AppColor.grayColor,
+    fontWeight: FontWeight.w500
+  );
+  static TextStyle bold11Light = TextStyle(
+    fontSize: 11,
+    color: AppColor.fontLightModeColor,
+    fontWeight: FontWeight.w500
+  );
+  static TextStyle bold11Dark = TextStyle(
+    fontSize: 11,
+    color: AppColor.fontDarkModeColor,
     fontWeight: FontWeight.w500
   );
 }

@@ -37,6 +37,6 @@ class BottomThemeWidget extends StatelessWidget {
           ),
         ],
       ),
-    );;
+    );
   }
 }

@@ -53,6 +53,7 @@
   "light": "Light",
   "dark": "Dark",
   "create_event": "Create Event",
+  "lets_start": "Let’s Start",
 
   "event_details": "Event Details",
   "tap_location_to_select": "Tap on Location To Select"

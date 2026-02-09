@@ -520,6 +520,16 @@ class S {
     );
   }
 
+  /// `Let’s Start`
+  String get lets_start {
+    return Intl.message(
+      'Let’s Start',
+      name: 'lets_start',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Event Details`
   String get event_details {
     return Intl.message(

@@ -1,0 +1,56 @@
+import 'package:evently_app/core/utils/app_color.dart';
+import 'package:flutter/material.dart';
+
+class CustomTextField extends StatelessWidget {
+  CustomTextField({
+    super.key,
+    required this.controller,
+    required this.hint,
+    required this.prefixIcon,
+    this.suffixIcons,
+    this.obscureText = false,
+    this.validator,
+  });
+  final TextEditingController controller;
+  final String hint;
+  final Icon prefixIcon;
+  final bool obscureText;
+  final String? Function(String?)? validator;
+  final IconButton? suffixIcons;
+
+  @override
+  Widget build(BuildContext context) {
+    return TextFormField(
+      validator: validator,
+      cursorColor: AppColor.fontColor,
+      obscureText: obscureText,
+      controller: controller,
+      decoration: InputDecoration(
+        suffixIcon: suffixIcons,
+        prefixIcon: prefixIcon,
+        prefixIconColor: Theme.of(context).colorScheme.primary,
+        hintText: hint,
+        hintStyle: Theme.of(context).textTheme.headlineSmall,
+        enabledBorder: OutlineInputBorder(
+          borderSide: BorderSide(
+            color: Theme.of(context).colorScheme.primary,
+            width: 1.2,
+          ),
+          borderRadius: BorderRadius.circular(16),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: AppColor.fontColor, width: 2),
+          borderRadius: BorderRadius.circular(16),
+        ),
+        errorBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: AppColor.red, width: 2),
+          borderRadius: BorderRadius.circular(16),
+        ),
+        focusedErrorBorder: OutlineInputBorder(
+          borderSide: BorderSide(color: AppColor.red, width: 2),
+          borderRadius: BorderRadius.circular(16),
+        ),
+      ),
+    );
+  }
+}

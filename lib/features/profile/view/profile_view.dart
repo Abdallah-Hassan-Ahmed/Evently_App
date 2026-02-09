@@ -2,7 +2,6 @@ import 'package:evently_app/config/language/manager/lang_provider.dart';
 import 'package:evently_app/config/themeing/manager/theme_provider.dart';
 import 'package:evently_app/core/extension/extensions.dart';
 import 'package:evently_app/core/utils/app_color.dart';
-import 'package:evently_app/core/utils/app_font_styles.dart';
 import 'package:evently_app/features/profile/widget/bottom_language_widget.dart';
 import 'package:evently_app/features/profile/widget/bottom_theme_widget.dart';
 import 'package:evently_app/features/profile/widget/menu_contiener_widget.dart';
