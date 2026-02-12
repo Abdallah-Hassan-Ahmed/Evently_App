@@ -530,6 +530,106 @@ class S {
     );
   }
 
+  /// `All`
+  String get all {
+    return Intl.message(
+      'All',
+      name: 'all',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Eating`
+  String get eating {
+    return Intl.message(
+      'Eating',
+      name: 'eating',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Exhibition`
+  String get exhibition {
+    return Intl.message(
+      'Exhibition',
+      name: 'exhibition',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Holiday`
+  String get holiday {
+    return Intl.message(
+      'Holiday',
+      name: 'holiday',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Book Club`
+  String get book_club {
+    return Intl.message(
+      'Book Club',
+      name: 'book_club',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Workshop`
+  String get workshop {
+    return Intl.message(
+      'Workshop',
+      name: 'workshop',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Gaming`
+  String get gaming {
+    return Intl.message(
+      'Gaming',
+      name: 'gaming',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Meeting`
+  String get meeting {
+    return Intl.message(
+      'Meeting',
+      name: 'meeting',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Birthday`
+  String get birthday {
+    return Intl.message(
+      'Birthday',
+      name: 'birthday',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sport`
+  String get sport {
+    return Intl.message(
+      'Sport',
+      name: 'sport',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Event Details`
   String get event_details {
     return Intl.message(

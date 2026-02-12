@@ -23,9 +23,12 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "add_event": MessageLookupByLibrary.simpleMessage("Add Event"),
+        "all": MessageLookupByLibrary.simpleMessage("All"),
         "already_have_account":
             MessageLookupByLibrary.simpleMessage("Already Have Account ?"),
         "arabic": MessageLookupByLibrary.simpleMessage("Arabic"),
+        "birthday": MessageLookupByLibrary.simpleMessage("Birthday"),
+        "book_club": MessageLookupByLibrary.simpleMessage("Book Club"),
         "choose_date": MessageLookupByLibrary.simpleMessage("Choose Date"),
         "choose_event_location":
             MessageLookupByLibrary.simpleMessage("Choose Event Location"),
@@ -41,6 +44,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "description": MessageLookupByLibrary.simpleMessage("Description"),
         "dont_have_account":
             MessageLookupByLibrary.simpleMessage("Don’t Have Account ?"),
+        "eating": MessageLookupByLibrary.simpleMessage("Eating"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
         "english": MessageLookupByLibrary.simpleMessage("English"),
         "event_date": MessageLookupByLibrary.simpleMessage("Event Date"),
@@ -49,6 +53,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "event_details": MessageLookupByLibrary.simpleMessage("Event Details"),
         "event_time": MessageLookupByLibrary.simpleMessage("Event Time"),
         "event_title": MessageLookupByLibrary.simpleMessage("Event Title"),
+        "exhibition": MessageLookupByLibrary.simpleMessage("Exhibition"),
         "find_events_description": MessageLookupByLibrary.simpleMessage(
             "Dive into a world of events crafted to fit your unique interests. Whether you\'re into live music, art workshops, professional networking, or simply discovering new experiences, we have something for everyone. Our curated recommendations will help you explore, connect, and make the most of every opportunity around you."),
         "find_events_title": MessageLookupByLibrary.simpleMessage(
@@ -57,6 +62,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Forget Password"),
         "forget_password_question":
             MessageLookupByLibrary.simpleMessage("Forget Password?"),
+        "gaming": MessageLookupByLibrary.simpleMessage("Gaming"),
+        "holiday": MessageLookupByLibrary.simpleMessage("Holiday"),
         "home": MessageLookupByLibrary.simpleMessage("Home"),
         "language": MessageLookupByLibrary.simpleMessage("Language"),
         "lets_start": MessageLookupByLibrary.simpleMessage("Let’s Start"),
@@ -68,6 +75,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "logout": MessageLookupByLibrary.simpleMessage("Logout"),
         "love": MessageLookupByLibrary.simpleMessage("Love"),
         "map": MessageLookupByLibrary.simpleMessage("Map"),
+        "meeting": MessageLookupByLibrary.simpleMessage("Meeting"),
         "name": MessageLookupByLibrary.simpleMessage("Name"),
         "or": MessageLookupByLibrary.simpleMessage("Or"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
@@ -86,10 +94,12 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Reset Password"),
         "search_event":
             MessageLookupByLibrary.simpleMessage("Search for Event"),
+        "sport": MessageLookupByLibrary.simpleMessage("Sport"),
         "tap_location_to_select":
             MessageLookupByLibrary.simpleMessage("Tap on Location To Select"),
         "theme": MessageLookupByLibrary.simpleMessage("Theme"),
         "title": MessageLookupByLibrary.simpleMessage("Title"),
-        "welcome_back": MessageLookupByLibrary.simpleMessage("Welcome Back ✨")
+        "welcome_back": MessageLookupByLibrary.simpleMessage("Welcome Back ✨"),
+        "workshop": MessageLookupByLibrary.simpleMessage("Workshop")
       };
 }

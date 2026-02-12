@@ -7,7 +7,7 @@ import 'package:evently_app/core/helper/validator.dart';
 import 'package:evently_app/features/Authentication/presentation/view/login_view.dart';
 import 'package:evently_app/features/Authentication/presentation/widget/logo_widget.dart';
 import 'package:evently_app/features/Authentication/presentation/widget/row_widget_text.dart';
-import 'package:evently_app/features/onBoarding/presentation/view/onBoarding_view.dart';
+import 'package:evently_app/features/Screen/presentation/view/app_screen.dart';
 import 'package:evently_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
 
@@ -135,7 +135,7 @@ class _CreateAccountViewState extends State<CreateAccountView> {
                     if (_formKey.currentState!.validate()) {
                       Navigator.push(
                         context,
-                        BaseRoute(page: const OnBoardingView()),
+                        BaseRoute(page: const AppScreen()),
                       );
                     }
                   },

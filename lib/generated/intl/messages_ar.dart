@@ -23,9 +23,12 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "add_event": MessageLookupByLibrary.simpleMessage("إضافة فعالية"),
+        "all": MessageLookupByLibrary.simpleMessage("الكل"),
         "already_have_account":
             MessageLookupByLibrary.simpleMessage("لديك حساب بالفعل؟"),
         "arabic": MessageLookupByLibrary.simpleMessage("العربيه"),
+        "birthday": MessageLookupByLibrary.simpleMessage("عيد ميلاد"),
+        "book_club": MessageLookupByLibrary.simpleMessage("نادي الكتاب"),
         "choose_date": MessageLookupByLibrary.simpleMessage("اختر التاريخ"),
         "choose_event_location":
             MessageLookupByLibrary.simpleMessage("اختر موقع الفعالية"),
@@ -40,6 +43,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "description": MessageLookupByLibrary.simpleMessage("الوصف"),
         "dont_have_account":
             MessageLookupByLibrary.simpleMessage("ليس لديك حساب؟"),
+        "eating": MessageLookupByLibrary.simpleMessage("طعام"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
         "english": MessageLookupByLibrary.simpleMessage("الانجليزيه"),
         "event_date": MessageLookupByLibrary.simpleMessage("تاريخ الفعالية"),
@@ -49,6 +53,7 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("تفاصيل الفعالية"),
         "event_time": MessageLookupByLibrary.simpleMessage("وقت الفعالية"),
         "event_title": MessageLookupByLibrary.simpleMessage("عنوان الفعالية"),
+        "exhibition": MessageLookupByLibrary.simpleMessage("معرض"),
         "find_events_description": MessageLookupByLibrary.simpleMessage(
             "انطلق في عالم من الفعاليات المصممة لتناسب اهتماماتك الفريدة. سواء كنت من محبي الموسيقى الحية، أو ورش العمل الفنية، أو التواصل المهني، أو حتى استكشاف تجارب جديدة، ستجد ما يناسبك. توصياتنا المختارة بعناية ستساعدك على الاستكشاف والتواصل والاستفادة القصوى من كل فرصة من حولك."),
         "find_events_title":
@@ -57,6 +62,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور"),
         "forget_password_question":
             MessageLookupByLibrary.simpleMessage("هل نسيت كلمة المرور؟"),
+        "gaming": MessageLookupByLibrary.simpleMessage("ألعاب"),
+        "holiday": MessageLookupByLibrary.simpleMessage("عطلة"),
         "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
         "language": MessageLookupByLibrary.simpleMessage("اللغة"),
         "lets_start": MessageLookupByLibrary.simpleMessage("أبدأ"),
@@ -68,6 +75,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "logout": MessageLookupByLibrary.simpleMessage("تسجيل الخروج"),
         "love": MessageLookupByLibrary.simpleMessage("المفضلة"),
         "map": MessageLookupByLibrary.simpleMessage("الخريطة"),
+        "meeting": MessageLookupByLibrary.simpleMessage("اجتماع"),
         "name": MessageLookupByLibrary.simpleMessage("الاسم"),
         "or": MessageLookupByLibrary.simpleMessage("أو"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
@@ -86,10 +94,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "reset_password":
             MessageLookupByLibrary.simpleMessage("إعادة تعيين كلمة المرور"),
         "search_event": MessageLookupByLibrary.simpleMessage("ابحث عن فعالية"),
+        "sport": MessageLookupByLibrary.simpleMessage("رياضة"),
         "tap_location_to_select":
             MessageLookupByLibrary.simpleMessage("اضغط على الموقع للاختيار"),
         "theme": MessageLookupByLibrary.simpleMessage("المظهر"),
         "title": MessageLookupByLibrary.simpleMessage("العنوان"),
-        "welcome_back": MessageLookupByLibrary.simpleMessage("مرحبًا بعودتك ✨")
+        "welcome_back": MessageLookupByLibrary.simpleMessage("مرحبًا بعودتك ✨"),
+        "workshop": MessageLookupByLibrary.simpleMessage("ورشة عمل")
       };
 }

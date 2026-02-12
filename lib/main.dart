@@ -39,7 +39,7 @@ class EventlyApp extends StatelessWidget {
       supportedLocales: S.delegate.supportedLocales,
       locale: Locale(languageProvider.currentLocal),
       debugShowCheckedModeBanner: false,
-      initialRoute: AppRoutes.intro,
+      initialRoute: AppRoutes.home,
       routes: AppRoutes.routes,
     );
   }

@@ -6,31 +6,43 @@ class CustomTextField extends StatelessWidget {
     super.key,
     required this.controller,
     required this.hint,
-    required this.prefixIcon,
+    this.prefixIcon,
     this.suffixIcons,
     this.obscureText = false,
     this.validator,
+    this.textStyle,
+    this.maxLine,
   });
   final TextEditingController controller;
   final String hint;
-  final Icon prefixIcon;
+  final Icon? prefixIcon;
   final bool obscureText;
   final String? Function(String?)? validator;
   final IconButton? suffixIcons;
+  final TextStyle? textStyle;
+  final int? maxLine;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      maxLines: maxLine ?? 1,
+
       validator: validator,
       cursorColor: AppColor.fontColor,
       obscureText: obscureText,
       controller: controller,
+      style:
+          textStyle ??
+          Theme.of(context).textTheme.headlineMedium!.copyWith(fontSize: 16),
       decoration: InputDecoration(
         suffixIcon: suffixIcons,
         prefixIcon: prefixIcon,
         prefixIconColor: Theme.of(context).colorScheme.primary,
         hintText: hint,
-        hintStyle: Theme.of(context).textTheme.headlineSmall,
+        hintStyle: Theme.of(context).textTheme.headlineSmall!.copyWith(
+          fontSize: 13,
+          fontWeight: FontWeight.w400,
+        ),
         enabledBorder: OutlineInputBorder(
           borderSide: BorderSide(
             color: Theme.of(context).colorScheme.primary,

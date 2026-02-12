@@ -54,6 +54,17 @@
   "dark": "الليلي",
     "lets_start": "أبدأ",
 
+  "all": "الكل",
+  "eating": "طعام",
+  "exhibition": "معرض",
+  "holiday": "عطلة",
+  "book_club": "نادي الكتاب",
+  "workshop": "ورشة عمل",
+  "gaming": "ألعاب",
+  "meeting": "اجتماع",
+  "birthday": "عيد ميلاد",
+  "sport": "رياضة",
+
   "event_details": "تفاصيل الفعالية",
   "tap_location_to_select": "اضغط على الموقع للاختيار"
 }
